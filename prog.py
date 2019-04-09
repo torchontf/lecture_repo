@@ -6,4 +6,11 @@ def num_vowels(string):
     for char in string:
         if char in vowels:
             counter = counter + 1
-    return counter
+    if counter > 2:
+        return True
+    else:
+        return False
+
+# test statement
+# print(num_vowels("yurt"))
+# print(num_vowels("origami"))
